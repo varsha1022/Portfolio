@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="./Varsha-logo.png" alt="Varsha Logo" />
+      </a>
+      <nav class="navbar">
+        <a href="#home"> <i class="bi bi-house-door-fill"></i> Home</a>
+        <a href="#about"> <i class="bi bi-person"></i> About</a>
+        <a href="#skills"> <i class="bi bi-list-task"></i> Skills</a>
+        <a href="#projects"> <i class="bi bi-mortarboard-fill"></i> Projects</a>
+      </nav>
+      <a href="./contact.html" class="navBtn">Contact Me</a>
+    </header>
+    <main class="content">
+      <section id="home">
+        <div class="home_content">
+          <h2><span>Hi,</span></h2>
+          <h1>
+            <label>I'</label> <span>m</span> <label>Var</label
+            ><label>sha <br /></label> <span>a</span> <label>Full</label>
+            <span>Stack</span> <label>Web</label>
+            <span>Developer</span>
+          </h1>
+          <p>
+            Skilled in Python, React Js,, HTML, and CSS. I specialize in
+            building dynamic, responsive websites and web applications that
+            deliver exceptional user experiences. With a strong foundation in
+            both front-end and back-end development, I am passionate about
+            crafting elegant solutions to complex problems.
+          </p>
+          <div class="btn_box">
+            <button class="btn1">Hire Me</button>
+            <a href="./contact.html" class="btn2"> Contact Me </a>
+          </div>
+        </div>
+        <div class="img_box">
+          <img src="./varsha.jpeg" alt="Varsha's portrait" />
+        </div>
+      </section>
+      <section id="about">
+        <div class="about_img">
+          <img src="./varsha.jpeg" alt="Varsha's portrait" />
+        </div>
+        <div class="about_content">
+          <h3>
+            <label>Passionate </label> <br /><span>Full</span>
+            <label>Stack</label><span>Web</span><label>Developer</label>
+          </h3>
+          <p>
+            Hello! I'm Varsha, a passionate web developer with a diverse skill
+            set that includes Python, React, HTML, and CSS. I thrive on creating
+            dynamic, responsive websites and applications that not only look
+            great but also provide seamless user experiences. <br />
+          </p>
+          <p>
+            A year ago, I discovered my love for coding and problem-solving.
+            Since then, I've been dedicated to learning and mastering various
+            technologies, constantly pushing myself to stay current with
+            industry trends and best practices.
+          </p>
+          <a href="./Varsha_Resume.pdf" class="btn3" download>Download CV</a>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="skillsContainer">
+          <div class="skillsSection">
+            <h2><span>Ski</span><label>lls</label></h2>
+            <p>
+              I excel in dissecting complex problems into manageable tasks,
+              essential for crafting robust, maintainable code in large-scale
+              projects. I'm driven by challenges, always seeking opportunities
+              to enhance my skills. My self-directed learning approach empowers
+              me to quickly grasp and adapt to new technologies with autonomy.
+            </p>
+          </div>
+          <div class="line"></div>
+          <div class="icons">
+            <img src="./python_icon.png" alt="Python" />
+            <span>Python</span>
+            <img src="./html_icon.png" alt="HTML" /><span>HTML</span>
+            <img src="./CSS_icon.jpg" alt="CSS" /><span>CSS</span>
+            <img src="./js_icon.webp" alt="JavaScript" /><span>JavaScript</span>
+            <img src="./react_icon.png" alt="React" /><span>React Js</span>
+            <img src="./flask_icon.png" alt="Flask" /> <span>Flask</span>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2><span>Pro</span><label>jects</label></h2>
+        <div id="prjContainer">
+          <div class="prj1 prj">
+            <img
+              src="./foodmunch.png"
+              alt="Food Munch Project"
+              onclick="playVideo('video1', this)"
+            />
+            <video id="video1" preload="auto" poster="poster_foodmunch.">
+              <source src="./foodmunch.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="play-pause-button"
+              onclick="togglePlayPause('video1', this)"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <h4><span>Food</span><label>Munch</label><span>App</span></h4>
+          </div>
+          <div class="prj2 prj">
+            <img
+              src="./todolist.png"
+              alt="Todo List Project"
+              onclick="playVideo('video2', this)"
+            />
+            <video id="video2" preload="auto" poster="poster_todolist.png">
+              <source src="./todolist.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="play-pause-button"
+              onclick="togglePlayPause('video2', this)"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <h4><span>Todos</span><label>App</label></h4>
+          </div>
+          <div class="prj3 prj">
+            <img
+              src="./checkVote.png"
+              alt="Vote Project"
+              onclick="playVideo('video3', this)"
+            />
+            <video id="video3" preload="auto" poster="poster_checkVote.png">
+              <source src="./checkVote.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="play-pause-button"
+              onclick="togglePlayPause('video3', this)"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <h4>
+              <span>Voter</span><label> Eligibility</label><span>App</span>
+            </h4>
+          </div>
+          <div class="prj4 prj">
+            <img
+              src="./counter.png"
+              alt="Counter Project"
+              onclick="playVideo('video4', this)"
+            />
+            <video id="video4" preload="auto" poster="poster_counter.png">
+              <source src="./counter.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="play-pause-button"
+              onclick="togglePlayPause('video4', this)"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <h4><span>Counter</span><label>App</label></h4>
+          </div>
+        </div>
+      </section>
+      <section id="follow">
+        <h6 id="followMeSection"><span>Follow</span><span>Me</span></h6>
+        <div id="iconSection">
+          <a href="https://twitter.com" aria-label="Twitter"
+            ><i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://facebook.com" aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <a href="#" class="footlogo">
+        <img src="./Varsha-logo.png" alt="Varsha Logo" class="logoImage" />
+      </a>
+      <p id="para1">
+        <a href="mailto:varshagaddam22@gmail.com">varshagaddam22@gmail.com</a>
+      </p>
+      <p id="para2">Kothapet, Hyderabad, Telangana, India.</p>
+    </footer>
+    <script src="./portfolio.js"></script>
+  </body>
+</html>

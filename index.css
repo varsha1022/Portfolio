@@ -1,0 +1,398 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: linear-gradient(#7f0000, #660000, #4c0000);
+}
+.header .logo {
+    margin-left: 30px;
+}
+.logo img {
+    width: 200px;
+    height: 76px;
+    transition:transform 0.3s linear, opacity 0.3s linear;
+}
+.logo:hover {
+    transform: scale(1.2); 
+    opacity: 1.0;
+    z-index: 50;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: box-shadow 0.3s linear, transform 0.3s linear, opacity 0.3s linear;
+}
+.navbar {
+    display: flex;
+    gap: 32px;
+    margin-left: 500px;
+}
+.navbar a:hover {
+    text-decoration: none;
+    transform: scale(1.2); 
+    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
+    opacity: 1.0;
+    font-weight: 500;
+    color: #fbab21;
+}
+.navBtn {
+    margin-right: 40px;
+    cursor: pointer;
+    border: 3px solid #660000;
+    border-radius: 8px;
+    height: 1.8rem;
+    width: 100px;
+    background-color: #ffb325;
+    color: black;
+    text-align: center;
+    padding-top: 8px;
+    transition: box-shadow 0.3s linear, transform 0.3s linear;
+    font-size: 13px;
+    font-weight: 400;
+}
+.navBtn:hover {
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 2px 3px #4c0000;
+    color: #4c0000;
+    transform: scale(1.1); 
+    border-color: #fbab21;
+    z-index: 30;
+    font-weight: 500;
+}
+section {
+    padding: 100px 20px;
+}
+#home {
+    display: flex;
+    max-width: 1000px;
+    position: absolute;
+    top: 26%;
+    left: 16%;
+    justify-content: space-between;
+    align-items: center;
+}
+span {
+    color: #fbab21;
+    font-size: 2.6rem;
+}
+label {
+    color: #971c1c;
+    font-size: 2rem;
+}
+.home_content {
+    width: 500px;
+    flex-wrap: nowrap;
+}
+.img_box img {
+    width: 100%;
+    height: 340px;
+    border-radius: 400px;
+    margin-left: 4rem;
+    margin-top: 10px;
+    transition: box-shadow 0.3s linear, transform 0.3s linear;
+}
+.img_box img:hover {
+    box-shadow: 0 0 10px 0px #1e1508;
+    cursor: pointer;
+    transform: scale(1.2); 
+    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
+    z-index: 20;
+}
+.btn1, .btn2, .btn3 {
+    cursor: pointer;
+    border-radius: 11px;
+    height: 2.5rem;
+    width: 100px;
+    background-color: #ffb325;
+    color: #820707;
+    text-align: center;
+    padding-top: 4px;
+    font-weight: 500;
+    box-shadow: 0 0 6px #4c232184;
+    border: none;
+}
+.btn1 {
+    font-weight: 700;
+}
+.btn3 {
+    width: 150px;
+}
+p {
+    color: #4c0000;
+}
+.btn2 {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 12.5px;
+    margin-top: 3px;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+    cursor: pointer;
+    background-color: #6b1313;
+    color: white;
+}
+.btn1, .btn2 {
+    margin-right: 20px;
+}
+#about {
+    display: flex;
+    width: 860px;
+    position: absolute;
+    top: 115%;
+    left: 20%;
+    gap: 220px;
+    justify-content: space-between;
+}
+.about_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.about_img img {
+    width: 580%;
+    height: 330px;
+    border-radius: 300px;
+    margin-left: -100px;
+    margin-top: 30px;
+    transition: box-shadow 0.3s linear, transform 0.3s linear;
+}
+.about_img img:hover {
+    box-shadow: 0 0 10px 0px #1e1508;
+    cursor: pointer;
+    transform: scale(1.2); 
+    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
+    z-index: 70;
+}
+.about_content .btn3 {
+    height: 2rem;
+    margin-top: 6px;
+    padding-top: 7px;
+}
+#skills {
+    display: flex;
+    width: 880px;
+    position: absolute;
+    top: 205%;
+    left: 17%;
+    justify-content: space-between;
+}
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.skillsSection {
+    flex: 20;
+    padding-right: 20px;
+}
+.line {
+    width: 3px;
+    height: 50%;
+    background-color: #ffb325;
+    margin: 110px 70px 30px 0;
+    box-shadow: 300px 70px 1200px 129px orange;
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 76px;
+}
+.icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons img {
+    height: 3.2rem;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+}
+.icons img:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+    box-shadow: 0 0 20px #ffb325;
+    z-index: 70;
+    border-radius: 8px;
+}
+.icons span {
+    font-size: 15px;
+    color: #3e2e12;
+    font-weight: 500;
+    margin-top: 8px;
+}
+#projects {
+    width: 800px;
+    position: absolute;
+    top: 265%;
+    left: 17%;
+    justify-content: space-between;
+}
+.prj {
+    display: inline-block;
+    margin: 10px 40px;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.prj:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px #b2aaa9cc;
+    transform: scale(1.05);
+    z-index: 50
+}
+.prj h4 {
+    text-align: center;
+}
+.prj span {
+    color: #fca817;
+    font-size: 18px;
+}
+.prj label {
+    color: #971c1c;
+    font-size: 16px;
+}
+.prj img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #fffdfdcc;
+}
+.prj1 {
+    border: 2px solid gray;
+    height: 283px;
+    box-shadow: 0 0 10px 5px  #d8d1d0cc;
+    border-radius: 13px;
+}
+
+.prj2 {
+    height: 280px;
+    border: 2px solid gray;
+    border-radius: 13px;
+    box-shadow: 0 0 10px 5px #ddd4f2 ;
+
+}
+.prj3 {
+    height: 284px;
+    border: 2px solid gray;
+    border-radius: 13px;
+    box-shadow: 0 0 10px 6px #d8d1d0cc;
+
+}
+.prj4 {
+    height: 284px;
+    border: 2px solid gray;
+    border-radius: 13px;
+    box-shadow: 0 0 10px 6px #d8d1d0cc;
+
+}
+.prj4 img {
+    height: 284px;
+    border-radius: 10px;
+}
+video {
+    width: 300px;
+    height: 200px; 
+    background-color: black;
+    display: none; /* Hide video initially */
+}
+.play-pause-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    display: none;
+}
+.prj img {
+    width: 300px; 
+    height: 200px; 
+    cursor: pointer;
+}
+#prjContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+    justify-items: center;
+    margin-top: 50px;
+}
+#follow {
+    width: 100%;
+    position: absolute;
+    top: 425%;
+    text-align: center;
+    gap: 35px;
+    color: #7f0000;
+    padding-top: 20px;
+}
+
+#iconSection {
+    display: flex;
+    text-align: center;
+    margin-left: 585px;
+    gap: 20px;
+    font-size: 1.8rem;
+    margin-top: 2.6rem;
+}
+.bi-facebook {
+    color: blue;
+    transition: box-shadow 0.3s linear, transform 0.3s linear, opacity 0.3s linear;
+}
+.bi-instagram {
+    color: rgb(255, 6, 230);
+    transition: box-shadow 0.3s linear, transform 0.3s linear, opacity 0.3s linear;
+}
+.bi-twitter {
+    color: #1da1f2;
+    transition: box-shadow 0.3s ease-in
+}
+.bi:hover {
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
+    padding: 10px;
+}
+#footer {
+    width: 100%;
+    position: absolute;
+    top: 467%;
+    text-align: center;
+    gap: 35px;
+    background: linear-gradient(#7f0000, #660000, #4c0000);
+    color: #ffb325;
+    padding-top: 30px;
+}
+
+#footer .logoImage{
+    height: 5rem;
+
+}
+#footer p {
+    color: white;
+}
