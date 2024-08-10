@@ -105,12 +105,13 @@ label {
     margin-left: 4rem;
     margin-top: 10px;
     transition: box-shadow 0.3s linear, transform 0.3s linear;
+
 }
 .img_box img:hover {
     box-shadow: 0 0 10px 0px #1e1508;
     cursor: pointer;
     transform: scale(1.2); 
-    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
+    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); 
     z-index: 20;
 }
 .btn1, .btn2, .btn3 {
@@ -176,7 +177,7 @@ p {
     box-shadow: 0 0 10px 0px #1e1508;
     cursor: pointer;
     transform: scale(1.2); 
-    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
+    box-shadow: 0 0 20px rgba(130, 58, 42, 0.8); 
     z-index: 70;
 }
 .about_content .btn3 {
@@ -211,7 +212,7 @@ p {
 .icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     text-align: center;
     padding: 2rem;
@@ -230,11 +231,12 @@ p {
 }
 .icons img:hover {
     cursor: pointer;
-    transform: scale(1.2); 
+    transform: scale(1.6); 
     box-shadow: 0 0 20px #ffb325;
-    z-index: 70;
+    z-index: 40;
     border-radius: 8px;
 }
+
 .icons span {
     font-size: 15px;
     color: #3e2e12;
@@ -355,38 +357,43 @@ video {
 #iconSection {
     display: flex;
     text-align: center;
-    margin-left: 585px;
+    margin-left: 555px;
     gap: 20px;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     margin-top: 2.6rem;
 }
 .bi-facebook {
     color: blue;
-    transition: box-shadow 0.3s linear, transform 0.3s linear, opacity 0.3s linear;
+    padding: 13px;
+    border-radius: 50%;
 }
 .bi-instagram {
     color: rgb(255, 6, 230);
-    transition: box-shadow 0.3s linear, transform 0.3s linear, opacity 0.3s linear;
+    padding: 13px;
+    border-radius: 50%;
 }
 .bi-twitter {
     color: #1da1f2;
-    transition: box-shadow 0.3s ease-in
+    padding: 13px;
+    border-radius: 50%;
+
 }
 .bi:hover {
     cursor: pointer;
-    border-radius: 32px;
-    box-shadow: 0 0 10px rgba(130, 58, 42, 0.8); /* Shadow effect on hover */
-    padding: 10px;
+    transform: scale(1.6); 
+    box-shadow: 0 0 10px gray;
+    
 }
+
 #footer {
     width: 100%;
     position: absolute;
     top: 467%;
     text-align: center;
-    gap: 35px;
+    /* gap: 10px; */
     background: linear-gradient(#7f0000, #660000, #4c0000);
     color: #ffb325;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 #footer .logoImage{
@@ -395,4 +402,22 @@ video {
 }
 #footer p {
     color: white;
+}
+
+
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+}
+
+#links a {
+    text-decoration: none;
+}
+#links a:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #360707;
+    border-radius: 4px;
+    padding: 1px;
 }
